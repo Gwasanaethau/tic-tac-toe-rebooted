@@ -1,3 +1,6 @@
+require_relative '../../src/board'
+require_relative '../../src/game'
+
 Given(/^I have started a new game$/) do
   Game.start
 end
