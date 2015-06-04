@@ -3,6 +3,5 @@ Given(/^I have started a new game$/) do
 end
 
 Then(/^I see an empty board$/) do
-  board = Board.new
-  expect(board).to respond_to :print
+  expect(Board.new.print).to eql " | | \n–+–+–\n | | \n–+–+–\n | | "
 end
